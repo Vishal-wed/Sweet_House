@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".sign_in"
+    android:background="@color/home_search"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+            <ImageView
+                android:id="@+id/img"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_200sdp"
+                android:src="@drawable/logo2"/>
+
+            <TextView
+                android:id="@+id/title"
+                android:fontFamily="@font/always_font"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sign in"
+                android:textSize="@dimen/_25sdp"
+                android:textStyle="bold"
+                android:layout_below="@+id/img"
+                android:layout_marginHorizontal="@dimen/_25sdp"/>
+
+            <EditText
+                android:id="@+id/sign_in_number"
+                android:layout_below="@+id/title"
+                style="@style/input"
+                android:inputType="number"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:hint="Enter your mobile number"
+                android:drawableStart="@drawable/baseline_local_phone_24"/>
+
+
+            <EditText
+                android:id="@+id/sign_in_password"
+                android:layout_below="@+id/sign_in_number"
+                style="@style/input"
+                android:visibility="gone"
+                android:inputType="number"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:hint="Enter OTP here"
+                android:drawableStart="@drawable/otp"
+                app:drawableTint="@color/white"/>
+
+            <Button
+                android:id="@+id/sign_in_button"
+                android:visibility="gone"
+                android:layout_marginTop="@dimen/_20sdp"
+                style="@style/button"
+                app:backgroundTint="@null"
+                android:text="Sign in"
+                android:layout_below="@id/sign_in_password"
+                />
+
+        <Button
+            android:id="@+id/sign_in_send"
+            android:layout_marginTop="@dimen/_20sdp"
+            style="@style/button"
+            app:backgroundTint="@null"
+            android:text="Send OTP"
+            android:layout_below="@id/sign_in_password"
+            />
+
+            <LinearLayout
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="@dimen/_40sdp">
+
+                <TextView
+                    style="@style/sign_in_bottom"
+                    android:text="Don't have Account?"
+                    android:gravity="end"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="@dimen/_5sdp"/>
+
+                <TextView
+                    android:id="@+id/sign_in_up"
+                    style="@style/sign_in_bottom"
+                    android:layout_weight="2"
+                    android:textColor="@color/button_back"
+                    android:text="Sign_up"/>
+
+            </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

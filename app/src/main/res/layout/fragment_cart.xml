@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    tools:context=".CartFragment"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/cart_title"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:fontFamily="@font/signika"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/_30sdp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:text="Cart"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_below="@+id/cart_title"
+                android:id="@+id/cart_item_area"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_120sdp">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_60sdp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/custom_search"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_55sdp">
+
+        <TextView
+            android:id="@+id/cart_total_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="0"
+            android:textSize="@dimen/_25sdp"
+            android:textStyle="bold"
+            android:fontFamily="@font/signika"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:gravity="center"
+            android:textColor="@color/white"/>
+
+        <Button
+            android:id="@+id/cart_check_out"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/_10sdp"
+            android:layout_marginStart="@dimen/_50sdp"
+            android:background="@drawable/custum_button"
+            android:fontFamily="@font/signika"
+            android:text="Check out"
+            android:textSize="@dimen/_20sdp"
+            app:backgroundTint="@null"
+            android:textColor="@color/white"
+            />
+
+    </RelativeLayout>
+
+</RelativeLayout>

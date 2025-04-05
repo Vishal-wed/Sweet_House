@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".editProfile"
+    android:background="@color/nav">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_150sdp"
+            android:src="@drawable/profile_top"/>
+
+        <TextView
+            android:fontFamily="@font/always_font"
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Edit profile"
+            android:textSize="@dimen/_25sdp"
+            android:textStyle="bold"
+            android:layout_marginHorizontal="@dimen/_25sdp"/>
+
+        <EditText
+            android:inputType="number"
+            android:textColor="@color/white"
+            android:id="@+id/edit_number"
+            style="@style/input"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:hint="Enter your Phone Numder"
+            android:drawableStart="@drawable/baseline_local_phone_24"/>
+
+        <EditText
+            android:inputType="text"
+            android:id="@+id/edit_name"
+            android:textColor="@color/white"
+            style="@style/input"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:hint="Name"
+            android:drawableStart="@drawable/person"/>
+
+        <EditText
+            android:inputType="textEmailAddress"
+            android:id="@+id/edit_email"
+            style="@style/input"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:hint="Enter your Email"
+            android:textColor="@color/white"
+            android:drawableStart="@drawable/email"/>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/edit_password"
+                    style="@style/input"
+                    android:inputType="textPassword"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:textColor="@color/white"
+                    android:hint="Enter your Password"
+                    android:drawableStart="@drawable/lock"/>
+
+                <ImageView
+                    android:id="@+id/seen"
+                    android:layout_width="@dimen/_25sdp"
+                    android:layout_height="@dimen/_25sdp"
+                    android:src="@drawable/seen"
+                    app:tint="@color/white"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:layout_marginEnd="@dimen/_35sdp"/>
+
+                <ImageView
+                    android:id="@+id/hide"
+                    android:visibility="gone"
+                    android:layout_width="@dimen/_25sdp"
+                    android:layout_height="@dimen/_25sdp"
+                    android:src="@drawable/hide"
+                    app:tint="@color/white"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:layout_marginEnd="@dimen/_35sdp"/>
+
+            </RelativeLayout>
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/cpass_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/edit_cpassword"
+                    style="@style/input"
+                    android:inputType="textPassword"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:textColor="@color/white"
+                    android:hint="Confirm Password"
+                    android:drawableStart="@drawable/lock"/>
+
+                <ImageView
+                    android:id="@+id/seen2"
+                    android:layout_width="@dimen/_25sdp"
+                    android:layout_height="@dimen/_25sdp"
+                    android:src="@drawable/seen"
+                    app:tint="@color/white"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:layout_marginEnd="@dimen/_35sdp"/>
+
+                <ImageView
+                    android:id="@+id/hide2"
+                    android:visibility="gone"
+                    android:layout_width="@dimen/_25sdp"
+                    android:layout_height="@dimen/_25sdp"
+                    android:src="@drawable/hide"
+                    app:tint="@color/white"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:layout_marginEnd="@dimen/_35sdp"/>
+
+            </RelativeLayout>
+
+        </FrameLayout>
+
+        <Button
+            android:id="@+id/submit_button"
+            android:layout_marginTop="@dimen/_15sdp"
+            style="@style/button"
+            android:visibility="gone"
+            app:backgroundTint="@null"
+            android:text="Submit"
+            />
+
+        <Button
+            android:id="@+id/edit_button"
+            style="@style/button"
+            android:layout_marginTop="@dimen/_20sdp"
+            app:backgroundTint="@null"
+            android:text="Edit"
+            />
+
+    </LinearLayout>
+
+</ScrollView>

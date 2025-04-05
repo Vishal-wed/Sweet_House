@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".payout_details"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Details"
+            android:fontFamily="@font/signika"
+            android:textSize="@dimen/_25sdp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/_25sdp"
+            android:textColor="@color/black"/>
+
+        <EditText
+            android:inputType="text"
+            android:id="@+id/name"
+            style="@style/input"
+            android:layout_marginTop="@dimen/_40sdp"
+            android:hint="Name"
+            android:drawableStart="@drawable/person"/>
+
+        <EditText
+            android:inputType="number"
+            android:id="@+id/number"
+            style="@style/input"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:hint="Enter your Phone Numder"
+            android:drawableStart="@drawable/baseline_local_phone_24"/>
+
+        <EditText
+            android:inputType="textEmailAddress"
+            android:id="@+id/email"
+            style="@style/input"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:hint="Enter your Email"
+            android:drawableStart="@drawable/email"/>
+
+        <EditText
+            android:inputType="textPostalAddress"
+            android:id="@+id/address"
+            style="@style/input"
+            android:gravity="start"
+            android:layout_height="@dimen/_100sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:hint="Enter your Address"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Payment Type :"
+            android:textSize="@dimen/_20sdp"
+            android:fontFamily="@font/signika"
+            android:layout_marginHorizontal="@dimen/_25sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:textColor="@color/black"/>
+
+        <Spinner
+            android:id="@+id/type"
+            app:backgroundTint="@null"
+            android:background="@drawable/spinner_custom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_25sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/checkOut"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/button"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/_25sdp"
+        app:backgroundTint="@null"
+        android:text="Check Out"
+        android:gravity="center"/>
+
+</RelativeLayout>

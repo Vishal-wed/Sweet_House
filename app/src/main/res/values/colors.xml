@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="input_back_shade">#80f37b2d</color>
+    <color name="product_back_color">#ff8b3d</color>
+    <color name="button_back">#f37b2d</color>
+    <color name="nav">#E9E9E9</color>
+    <color name="color1">#f37b2d</color>
+    <color name="home_search">#806B6565</color>
+    <color name="card_color">#9AFFFFFF</color>
+    <color name="card_color2">#80f37b2d</color>
+    <color name="default_color">#cac4d0</color>
+    <color name="default_color2">#161616</color>
+    <color name="red">#FF0000</color>
+    <color name="transparent">#00FFFFFF</color>
+    <color name="backShade">#3B000000</color>
+    <color name="green">#00E009</color>
+    <color name="out_of_stock_text">#EBFF0000</color>
+    <color name="out_of_stock_bg">#E9525252</color>
+
+</resources>

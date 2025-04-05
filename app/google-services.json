@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "119354372673",
+    "project_id": "sweet-house-95cce",
+    "storage_bucket": "sweet-house-95cce.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:119354372673:android:546f9366d0481fe8ce0cc0",
+        "android_client_info": {
+          "package_name": "com.example.sweethouse"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA8tCde6OSoMmMg9fGvJJETzKOGvhA4j-U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

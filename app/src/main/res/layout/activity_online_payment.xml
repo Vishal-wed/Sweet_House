@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".onlinePayment"
+    android:background="@color/home_search">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Online Payment"
+            android:textSize="@dimen/_20sdp"
+            android:textStyle="bold"
+            android:textColorHint="@color/black"
+            android:fontFamily="@font/signika"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/_15sdp"/>
+
+        <LinearLayout
+            android:id="@+id/OnlineUPI"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginHorizontal="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:background="@drawable/custum_button"
+            app:backgroundTint="@null">
+
+            <ImageView
+                android:id="@+id/upi_img"
+                android:layout_marginVertical="@dimen/_10sdp"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_width="@dimen/_80sdp"
+                android:layout_height="@dimen/_80sdp"
+                android:src="@drawable/upi"
+                android:background="@drawable/custom_img"
+                app:backgroundTint="@null"/>
+
+            <TextView
+                android:id="@+id/upi_text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="@dimen/_25sdp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:text="UPI"
+                android:fontFamily="@font/signika"
+                android:gravity="center"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/clickUPI"
+            android:visibility="gone"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginHorizontal="@dimen/_20sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/order_card"
+            android:padding="@dimen/_5sdp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Enter UPI id here"
+                android:textColor="@color/black"
+                android:fontFamily="@font/signika"
+                android:textStyle="bold"
+                android:textSize="@dimen/_15sdp"
+                android:layout_marginHorizontal="@dimen/_30sdp"/>
+
+            <EditText
+                android:id="@+id/user_upi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/input"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:hint="try@okBank"/>
+
+            <Button
+                android:id="@+id/upi_button"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                style="@style/button"
+                app:backgroundTint="@null"
+                android:text="Pay"
+                android:padding="@dimen/_7sdp"
+                android:layout_marginTop="@dimen/_10sdp"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/OnlineCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginHorizontal="@dimen/_20sdp"
+            android:background="@drawable/custum_button"
+            app:backgroundTint="@null">
+
+            <ImageView
+                android:padding="@dimen/_10sdp"
+                android:layout_marginVertical="@dimen/_10sdp"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_width="@dimen/_80sdp"
+                android:layout_height="@dimen/_80sdp"
+                android:src="@drawable/card"
+                android:background="@drawable/custom_img"
+                app:backgroundTint="@null"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="@dimen/_25sdp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:text="Card Pay"
+                android:fontFamily="@font/signika"
+                android:gravity="center"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/clickCard"
+            android:visibility="gone"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginHorizontal="@dimen/_20sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/order_card"
+            android:padding="@dimen/_5sdp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Enter Card id"
+                android:textColor="@color/black"
+                android:fontFamily="@font/signika"
+                android:textStyle="bold"
+                android:textSize="@dimen/_15sdp"
+                android:layout_marginHorizontal="@dimen/_30sdp"/>
+
+            <EditText
+                android:id="@+id/card_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/input"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:hint="0000 0000 0000 0000"/>
+
+            <TextView
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Enter Card hoder name"
+                android:textColor="@color/black"
+                android:fontFamily="@font/signika"
+                android:textStyle="bold"
+                android:textSize="@dimen/_15sdp"
+                android:layout_marginHorizontal="@dimen/_30sdp"/>
+
+            <EditText
+                android:id="@+id/card_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/input"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:hint="Name"/>
+
+            <TextView
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Enter Expiry Date"
+                android:textColor="@color/black"
+                android:fontFamily="@font/signika"
+                android:textStyle="bold"
+                android:textSize="@dimen/_15sdp"
+                android:layout_marginHorizontal="@dimen/_30sdp"/>
+
+            <EditText
+                android:id="@+id/card_expiry"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/input"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:hint="MM - YY"/>
+
+            <Button
+                android:id="@+id/card_button"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                style="@style/button"
+                app:backgroundTint="@null"
+                android:text="Pay"
+                android:padding="@dimen/_7sdp"
+                android:layout_marginTop="@dimen/_10sdp"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
